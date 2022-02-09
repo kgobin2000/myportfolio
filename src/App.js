@@ -13,49 +13,31 @@ import { FaJava } from "react-icons/fa";
 
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
 function NavBar() {
   return (
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand ms-5" href="#">
-          Khalid Gobin
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end me-5" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#projects">
-                Projects
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.linkedin.com/in/khalidgobin/">
-                <i class="bi bi-linkedin"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/kgobin2000">
-                <i class="bi bi-github"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
+      <Container fluid>
+        <Navbar.Brand href="#intro">Khalid Gobin</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+          <Nav>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="https://www.linkedin.com/in/khalidgobin/">
+              <i class="bi bi-linkedin"></i>
+            </Nav.Link>
+            <Nav.Link eventKey={2} href="https://github.com/kgobin2000">
+              <i class="bi bi-github"></i>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 function Intro() {
