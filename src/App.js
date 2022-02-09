@@ -76,7 +76,7 @@ function Projects() {
   ];
   return (
     <div class="row projects h-50 p-1" id="projects">
-      <div class="row  mb-3 mt-5 pro h-100 justify-content-center">
+      <div class="row  mb-3 mt-5 pro h-100 justify-content-center row-cols-3">
         <div class="col m-5 mybox" id="app">
           <Button
             id="mybut"
