@@ -122,20 +122,20 @@ function Projects() {
 function MyVerticallyCenteredModal(props) {
   console.log(props);
   return (
-    <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+    <Modal {...props} size="xl" aria-labelledby="contained-modal-title-vcenter" centered>
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">{props.name}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <div className="row">
-          <div className="col">
+          <div className="col-3">
             {" "}
             <p>{props.desc}</p>
           </div>
-          <div className="col myImg overflow-scroll">
+          <div className="col-9 myImg overflow-scroll">
             {" "}
-            <img src={props.image2} class="img-fluid" alt="" />
-            <img src={props.image1} class="img-fluid" alt="" />
+            <img src={props.image2} class="img-fluid " alt="" />
+            <img src={props.image1} class="img-fluid " alt="" />
           </div>
         </div>
       </Modal.Body>
