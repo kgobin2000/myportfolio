@@ -85,18 +85,19 @@ function Projects() {
     app1,
     app2
   ];
-  const soccerGame = ["Mini Soccer Game (Java)", "Play Mini Soccer, with this fun App created using Java Swing! "];
+  const soccerGame = ["Mini Soccer Game (Java)", "Play Mini Soccer, with this fun App created using Java Swing!", ms1, ms2];
   const decentraLease = [
     "Decentralease (Ethereum Blockchain App)",
-    "This app tracks the lifecycle of a car from it's creation to it's scrapping using an Ethereum Blockchain netowrk"
+    "This app tracks the lifecycle of a car from it's creation to it's scrapping using an Ethereum Blockchain network",
+    dc1,
+    dc2
   ];
   return (
     <div class="row projects h-50 p-1" id="projects">
       <div class="row  mb-3 mt-5 pro h-100 justify-content-center">
         <div class="col m-5 mybox" id="app">
           <Button
-            variant=""
-            class="mybut"
+            id="mybut"
             onClick={() => {
               setModalShow(true);
               setName(taxCalc[0]);
@@ -108,23 +109,25 @@ function Projects() {
         </div>
         <div class="col bg-secondary m-5 mybox" id="ms">
           <Button
-            class="mybut"
-            variant=""
+            id="mybut"
             onClick={() => {
               setModalShow(true);
               setName(soccerGame[0]);
               setDesc(soccerGame[1]);
+              setImg1(soccerGame[2]);
+              setImg2(soccerGame[3]);
             }}
           ></Button>
         </div>
         <div class="col bg-secondary m-5 mybox" id="dc">
           <Button
-            class="mybut"
-            variant=""
+            id="mybut"
             onClick={() => {
               setModalShow(true);
               setName(decentraLease[0]);
               setDesc(decentraLease[1]);
+              setImg1(decentraLease[2]);
+              setImg2(decentraLease[3]);
             }}
           ></Button>
         </div>

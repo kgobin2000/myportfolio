@@ -105,7 +105,7 @@ reserved {
   height: 45vh;
 }
 
-.mybut {
+#mybut {
   height: 100%;
   width: 100%;
   background-color: transparent;
