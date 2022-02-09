@@ -1,1 +1,117 @@
-@import "~antd/dist/antd.css";
+.intro {
+  background-image: url(bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#dc {
+  background-image: url(dc1.png);
+  background-size: cover;
+}
+
+#app {
+  background-image: url(app2.png);
+  background-size: cover;
+}
+#ms {
+  background-image: url(ms1.png);
+  background-size: cover;
+}
+
+.text {
+  margin-left: 30%;
+  color: white;
+  text-align: left;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 49.1538px;
+  line-height: 58px;
+}
+
+.make-things {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34.6968px;
+  line-height: 41px;
+}
+
+.projects {
+  height: 50vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pro {
+  align-self: center;
+}
+
+.mybox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25vw;
+  height: 20vh;
+}
+.mybox:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.mybox2 {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+}
+
+.bigbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.good,
+reserved {
+  font-family: Raleway;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 34.6968px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.reserved {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34.6968px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.myImg {
+  height: 45vh;
+}
+
+.mybut {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
