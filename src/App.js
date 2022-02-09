@@ -42,7 +42,7 @@ function NavBar() {
 }
 function Intro() {
   return (
-    <div class="intro bg-image row " id="intro">
+    <div class="intro row " id="intro">
       <div class="col text">
         Hi.
         <br />
